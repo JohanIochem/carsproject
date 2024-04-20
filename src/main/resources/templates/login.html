@@ -1,0 +1,49 @@
+<html xlmns:th="https://www.thymeleaf.org">
+<head>
+    <title>Page de Connexion</title>
+    <link rel="stylesheet" href="/css/lib/bootstrap.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<header th:include="parts/header :: header"></header>
+<div class="mt-5">
+    <div class="container">
+        <h3 class="text-primary text-center">Connectez vous ! </h3>
+        <div th:if="${param.error}" class="alert alert-danger text-center mt-3">
+            Identifiant ou mot de passe incorrecte
+        </div>
+
+        <div th:if="${param.logout}" class="alert alert-info text-center mt-3">
+            Vous êtes déconnecté
+        </div>
+
+        <div th:if="${param.registersuccess}" class="alert alert-success text-center mt-3">
+            Votre compte est crée, veuillez vous connectez
+        </div>
+
+        <form th:action="${login}" method="post" class="mt-3">
+            <div class="text-center">
+                <label for="email"> Adresse Email</label>
+                <input type="text" name="username" id="email" placeholder="Adresse email">
+            </div>
+            <div class="text-center">
+                <label for="password">
+                    Mot de passe
+                </label>
+                <input type="password" id="password" name="password" placeholder="Mot de passe">
+            </div>
+
+
+            <div class="text-center">
+                <input type="submit">
+            </div>
+        </form>
+
+        <div class="text-center mt-3">
+            <h2>Je n'ai pas de compte</h2>
+            <a href="http://localhost:8081/jee/register" class="btn btn-outline-secondary">Créer un compte</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

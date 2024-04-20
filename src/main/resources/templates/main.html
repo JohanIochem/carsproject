@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+
+<head>
+    <title>Mon Projet Automobile 🚗</title>
+    <link rel="stylesheet" href="/css/lib/bootstrap.css">
+
+</head>
+
+<body>
+<header th:include="parts/header :: header"></header>
+<div class="container-fluid">
+<div class="row">
+    <div class="col">
+        <div class="text_center">
+            <h2 class="text-center"> Bienvenue sur mon site d'automobile</h2>
+        </div>
+    </div>
+
+    <div class="text-center mt-3">
+        <h2>Rechercher par marque </h2>
+        <a href="cars" class="btn btn-outline-secondary">Voir les marques </a>
+    </div>
+</div>
+</div>
+</body>
