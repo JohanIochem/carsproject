@@ -1,38 +1,136 @@
-<html xlmns:th="https://www.thymeleaf.org">
+<DOCTYPE html xlmns:th="https://www.thymeleaf.org">
 
-<head>
-    <title>
-        Marque de voiture
-    </title>
-    <link rel="stylesheet" href="/css/lib/bootstrap.css">
-</head>
+    <head>
+        <title>
+            Marque de voiture
+        </title>
+        <link rel="stylesheet" href="/css/lib/bootstrap.css">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
 
-<body>
-<main>
-    <header th:include="parts/header :: header"></header>
-    <div class="mt-5">
-        <h3>Choisissez la marque de voiture qui vous interesse</h3>
-        <div class="container text-center">
-            <div class="row">
-                <div class="col">
-                    Marque Française
-                </div>
-                <div class="col">
-                    Marque Allemande
-                </div>
-                <div class="col">
-                    Marque Américaine
-                </div>
-                <div class="col">
-                    Marque Japonaise
-                </div>
-                <div class="col">
-                    Maque Coréenne
+    <body>
+    <main>
+        <header th:include="parts/header :: header"></header>
+
+        <section>
+            <div class="mt-7">
+                <h6 class="text-center">Retrouvez ici les marques les plus recherchées 👇</h6>
+                <br>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="border">
+                                Porsche
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="border">
+                                Volkswagen
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="border">
+                                Peugeot
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="border">
+                                BMW
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="border">
+                                Audi
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="border">
+                                Tesla
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="border">
+                                Mercedes
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="border">
+                                Hyundai
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <br>
+                        <br>
+                        <h3>
+                            Voici quelques voitures 👇
+                        </h3>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="border">
+                            Ici je veux un bloc ou je peux insérer des données
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="border">
+                            Ici je veux un bloc ou je peux insérer des données
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="border">
+                            Ici je veux un bloc ou je peux insérer des données
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+        <br>
+
+        <section>
+            <div class="mt-7">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <button class="design_button text-center">Voir les autres véhicules récemment ajouté
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <header th:include="parts/footer :: footer"></header>
 
 
-</main>
-</body>
+    </main>
+    </body>
+</DOCTYPE>

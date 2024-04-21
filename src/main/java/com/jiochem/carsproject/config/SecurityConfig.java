@@ -23,7 +23,7 @@ public class SecurityConfig {
         httpSecurity.authorizeRequests(
                 (request)->
                         request
-                                .requestMatchers("/login", "/register", "error/**", "/js/**", "css/**","upload/**", "assets/**", "/").permitAll()
+                                .requestMatchers("/login", "/register", "error/**", "/js/**", "css/**","upload/**", "img/**", "assets/**", "/").permitAll()
                                 .requestMatchers("/admin").hasAuthority("ADMIN")
                                 .requestMatchers("/reservations/**").hasAuthority("USER")
                                 .anyRequest().authenticated()
